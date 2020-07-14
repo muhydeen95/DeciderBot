@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
-$username = "oqnzrevpkpkccb";
-$password = "6b8443ecf56d356402186fe013e87d364d6797b579936466c3de2e47fd68fd64";
+$servername = "e11wl4mksauxgu1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$username = "tqzqyaql9pilk01c";
+$password = "u0ey1ow7lunu58z5";
 
 // Connect to database
 $conn = mysqli_connect($servername, $username, $password, 'deciderbot');
