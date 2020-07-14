@@ -18,6 +18,11 @@
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap" rel="stylesheet">
 
+    <!--=========================*
+              Toastr CSS
+    *===========================-->
+    <link rel="stylesheet" href="assets/css/toastr.min.css">
+
     <!--Custom CSS-->
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <title>Decider Bot</title>
@@ -104,7 +109,7 @@
                     <div class="col-md-7 pt-5">
                         <div class="mt-5 pt-5">
                             <p class="mt-5 pt-5">Get notified on the day launched!</p>
-                            <form method="POST" action="./subscribe.php">
+                            <form method="POST" id="subscriber-form">
                                 <div class="row">
                                     <div class="col-8 px-1">
                                         <input type="email" name="email" class="form-control" placeholder="Enter Email Address" required>
@@ -157,12 +162,16 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
      <!-------------------------------------AOS Links------------------------------------->
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Toastr Js -->
+    <script src="assets/js/toastr.min.js"></script>
     
     <!--Custom js-->
     <script src="./assets/js/app.js"></script>

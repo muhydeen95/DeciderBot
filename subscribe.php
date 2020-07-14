@@ -18,15 +18,24 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Check if email is valid
 {
     $signal = 'bad';
     $message = 'Email already exists';
-} else {
-    $sql = "INSERT INTO email_lists (email)
-    VALUES ('$email')";
+} else { // All is good.. Lets save the email
+    $sql = "INSERT INTO email_lists (email) VALUES ('$email')";
     
     if (mysqli_query($conn, $sql)) {
-        echo "Email stored successfully";
-      } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        $signal = 'ok';
+        $message = 'Email stored successfully';
+    } else {
+        $signal = 'bad';
+        $message = "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 }
 
 mysqli_close($conn); // Close connection
+
+$data = array(
+    'signal' => $signal,
+    'msg' => $message
+);
+
+// Return data
+echo json_encode($data);

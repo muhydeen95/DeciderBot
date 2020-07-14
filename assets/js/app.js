@@ -31,11 +31,23 @@ span.onclick = function() {
 // Lets submit the subscribe form
 $('#subscriber-form').on('submit', function (e) {
     e.preventDefault();
-  
-    $.post("subscribe.php",{
-          
-    }, function(data, status) {
-  
-    });
-  });
+
+    $.post(
+        "subscribe.php",
+        $('#subscriber-form').serialize(),
+        function(data) {
+            const res = JSON.parse(data);
+
+            if (res.signal === 'ok') {
+                toastr.success(res.msg);
+                $('#msg').hide();
+                $('#subscriber-form input').val(function () {
+                    return '';
+                });
+            } else {
+                toastr.error(res.msg);
+            }
+        }
+    );
+});
   
