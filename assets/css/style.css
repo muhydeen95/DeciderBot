@@ -50,14 +50,15 @@ h2 {
     content: "";
     position: absolute;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    left: 40%;
+    width: 180px;
+    height: 180px;
+    left: 35%;
     top: 30%;
     transition: (-50%, -50%);
     background: linear-gradient(241.02deg, #FF6B6B 21.69%, rgba(255, 107, 107, 0) 92.8%);
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
+
 
 .logo, button, h2 {
     font-family: 'Poppins', sans-serif;
@@ -106,6 +107,36 @@ h2 {
     background: transparent;
     cursor: pointer;
 }
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+  ul li {
+      font-size: 1em;
+  }
+  
+ul li span {
+    padding: 0 2px;
+}
+
+  ul .pink::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FF6B6B; /* Change the color */
+    font-size: 30px;
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: .7em; /* Also needed for space (tweak if needed) */
+  }
+
+  ul .yellow::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FFE66D; /* Change the color */
+    font-size: 30px;
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: .7em; /* Also needed for space (tweak if needed) */
+  }
 
 
 @media only screen and (max-width: 750px) {
@@ -215,7 +246,6 @@ h2 {
      -webkit-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
      -moz-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
      -o-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
-     z-index: 10 !important;
 }
 
 .x2 {
@@ -249,7 +279,7 @@ h2 {
      -webkit-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
      -moz-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
      -o-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
-     z-index: 10 !important;
+     
 }
 
 .x5 {
@@ -261,7 +291,7 @@ h2 {
      -webkit-animation: moveclouds 16s linear infinite, sideWays 1s ease-in-out infinite alternate;
      -moz-animation: moveclouds 16s linear infinite, sideWays 1s ease-in-out infinite alternate;
      -o-animation: moveclouds 16s linear infinite, sideWays 1s ease-in-out infinite alternate;
-     z-index: 10 !important;
+     
 }
 
 .x6 {
@@ -295,7 +325,7 @@ h2 {
     -webkit-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
     -moz-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
     -o-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
-    z-index: 10 !important;
+   
 }
 
 .x9 {
@@ -307,7 +337,7 @@ h2 {
     -webkit-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
     -moz-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
     -o-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
-    z-index: 10 !important;
+    
 }
 
 .x10 {
@@ -319,7 +349,7 @@ h2 {
     -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
     -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
     -o-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
-    z-index: 10 !important;
+    
 }
 
 @-webkit-keyframes moveclouds { 
@@ -378,6 +408,31 @@ h2 {
 }
 
 
+/* Rain effect */
+.rain {
+    position: absolute;
+    width: 466px;
+    height: 8px;
+    background: linear-gradient(269.71deg, rgba(10, 21, 43, 0.7) 31.44%, rgba(255, 255, 255, 0.357) 100.8%);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    transform: rotate(-47.75deg);
+}
+
+.yi {
+    right: 50px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    background: linear-gradient(180deg, rgba(233, 188, 183, 0.63) 0%, rgba(233, 188, 183, 0.203) 100%);
+    -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -o-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    
+}
+
+/* rotation effect */
 .rotate {
     animation: rotation 8s infinite linear;
     position: absolute;

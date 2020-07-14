@@ -23,7 +23,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Check if email is valid
     
     if (mysqli_query($conn, $sql)) {
         $signal = 'ok';
-        $message = 'Email stored successfully';
+        $message = 'Email registered successfully';
     } else {
         $signal = 'bad';
         $message = "Error: " . $sql . "<br>" . mysqli_error($conn);
