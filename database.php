@@ -9,7 +9,12 @@ $conn = mysqli_connect($servername, $username, $password, 'deciderbot');
 
 //Check connection
 if (!$conn) {
-    die("Connection failed:".mysqli_connect_error());
+    $data = array(
+        'signal' => 'bad',
+        'msg' => "Connection failed:".mysqli_connect_error()
+    );
+    
+    die(json_encode($data));
 }
 
 ?>
