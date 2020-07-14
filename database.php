@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "oqnzrevpkpkccb";
+$password = "6b8443ecf56d356402186fe013e87d364d6797b579936466c3de2e47fd68fd64";
 
 // Connect to database
 $conn = mysqli_connect($servername, $username, $password, 'deciderbot');
