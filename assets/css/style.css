@@ -50,7 +50,7 @@ h2 {
     transform: matrix(0.87, -0.49, -0.49, -0.87, 0, 0);
 }
 
-.centered {
+/* .centered {
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -61,7 +61,7 @@ h2 {
     transition: (-50%, -50%);
     background: linear-gradient(241.02deg, #FF6B6B 21.69%, rgba(255, 107, 107, 0) 92.8%);
     transform: matrix(1, 0, 0, -1, 0, 0);
-}
+} */
 
 
 .logo, button, h2 {
@@ -87,7 +87,7 @@ h2 {
 }
 
 .mobiles {
-    /* z-index: 5 !important; */
+    z-index: 5 !important;
     /* background: #0a152b; */
     background: transparent;
     position: relative;
@@ -99,6 +99,7 @@ h2 {
 
 .phone1 {
     margin: 0 auto;
+    position: relative;
 }
 
 .special {
@@ -110,37 +111,27 @@ h2 {
     margin-left: auto;
     background: transparent;
     cursor: pointer;
+    /* z-index: 5 !important; */
 }
 
-ul {
-    list-style: none; /* Remove default bullets */
-  }
-
-  ul li {
-      font-size: 1em;
-  }
-  
-ul li span {
-    padding: 0 2px;
-}
-
-  ul .pink::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #FF6B6B; /* Change the color */
-    font-size: 30px;
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: .7em; /* Also needed for space (tweak if needed) */
-  }
-
-  ul .yellow::before {
+.yellow::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #FFE66D; /* Change the color */
     font-size: 30px;
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: .7em; /* Also needed for space (tweak if needed) */
-  }
+}
+
+.pink::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FF6B6B; /* Change the color */
+    font-size: 30px;
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: .7em; /* Also needed for space (tweak if needed) */
+}
+
 
 
 @media only screen and (max-width: 750px) {
@@ -165,7 +156,7 @@ ul li span {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 10; /* Sit on top */
     padding-top: 70px; /* Location of the box */
     left: 0;
     top: 0;
@@ -424,32 +415,82 @@ ul li span {
     transform: rotate(-47.75deg);
 }
 
-.yi {
-    right: 50px;
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    transform: scale(0.6);
-    background: linear-gradient(180deg, rgba(233, 188, 183, 0.63) 0%, rgba(233, 188, 183, 0.203) 100%);
-    -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
-    -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
-    -o-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
-    
-}
 
 /* rotation effect */
-.rotate {
-    animation: rotation 8s infinite linear;
+.right {
+    /* animation: rotation 8s infinite linear; */
     position: absolute;
-    top: 130px;
-    left: -60px;
+    top: 60px;
+    left: -100px;
+    z-index: 1;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
+.left {
+    /* animation: rotation 8s infinite linear; */
+    position: absolute;
+    bottom: 130px;
+    right: -30px;
+    z-index: -1;
+}
 
-    to {
-        transform: rotate(359deg);
-    }
+.next {
+    /* animation: rotation 8s infinite linear; */
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    z-index: -1;
+}
+
+.img4-top {
+    /* animation: rotation 8s infinite linear; */
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    z-index: -1;
+}
+
+.yellow-circle {
+    /* animation: rotation 8s infinite linear; */
+    position: absolute;
+    top: 70px;
+    right: 130px;
+    z-index: -1;
+}
+
+.pink-circle {
+    /* animation: rotation 8s infinite linear; */
+    position: absolute;
+    /* top: 70px;
+    right: 130px;
+    z-index: -1; */
+}
+
+.c-shape {
+    position: absolute;
+    left: -170px;
+    bottom: -120px;
+    z-index: -1;
+}
+
+.c-bottom {
+    position: absolute;
+    transform: rotate(180deg);
+    right: -120px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bottom-circle {
+    position: absolute;
+    transform: rotate(180deg);
+    right: 120px;
+    bottom: 120px;
+    z-index: -1;
+}
+
+.top-circle {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
 }
