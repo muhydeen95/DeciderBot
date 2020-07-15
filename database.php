@@ -1,11 +1,11 @@
 <?php
 
-$servername = "e11wl4mksauxgu1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-$username = "tqzqyaql9pilk01c";
-$password = "u0ey1ow7lunu58z5";
+$servername = "localhost";
+$username = "muhydeen95";
+$password = "Smagold@01";
 
 // Connect to database
-$conn = mysqli_connect($servername, $username, $password, 'dka281wlo07nt8c3');
+$conn = mysqli_connect($servername, $username, $password, 'muhydeen95');
 
 //Check connection
 if (!$conn) {
