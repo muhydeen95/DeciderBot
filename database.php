@@ -1,11 +1,11 @@
 <?php
 
 $servername = "http://85.10.205.173:3306";
-$username = "muhydeen95";
+$username = "muhydeen";
 $password = "Smagold@01";
 
 // Connect to database
-$conn = mysqli_connect($servername, $username, $password, 'muhydeen95');
+$conn = mysqli_connect($servername, $username, $password, 'deciderbot');
 
 //Check connection
 if (!$conn) {
