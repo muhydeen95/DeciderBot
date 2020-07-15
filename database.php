@@ -1,6 +1,6 @@
 <?php
 
-$servername = "http://db4free.net:3306";
+$servername = "db4free.net:3306";
 $username = "muhydeen";
 $password = "Smagold@01";
 
