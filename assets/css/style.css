@@ -28,6 +28,7 @@ p {
 
 h1 {
     letter-spacing: 5px;
+    font-size: 3.5rem;
 }
 
 h2 {
@@ -565,7 +566,7 @@ h2 {
 }
 
 .y5 {
-    right: 450px;
+    right: 550px;
     bottom: 700px;
 }
 
@@ -619,6 +620,10 @@ h2 {
   
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
+    h1 {
+        font-size: 3rem;
+    }
+
     .modal-content {
       width: 100%;
     }
