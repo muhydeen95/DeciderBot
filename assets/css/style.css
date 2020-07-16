@@ -68,6 +68,7 @@ h2 {
 .logo span {
     color: #FF6B6B;
     position: relative;
+    margin-left: -7px;
 }
 
 .logo-dot {
