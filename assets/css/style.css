@@ -233,6 +233,28 @@ h2 {
     z-index: -1;
 }
 
+
+/* ============= GOT TO TOP =========== */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #FF6B6B; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  .fas {
+      background: #FF6B6B;
+  }
+
 /* ============= MODAL IMAGES ================ */
 
 /* The Modal (background) */
@@ -528,7 +550,7 @@ h2 {
 }
 
 .y2 {
-    left: -50px;
+    left: -65px;
     top: 350px;
 }
 
@@ -538,13 +560,13 @@ h2 {
 }
 
 .y4 {
-    right: 350px;
+    right: 430px;
     top: 500px;
 }
 
 .y5 {
-    left: 500px;
-    bottom: 800px;
+    right: 450px;
+    bottom: 700px;
 }
 
 .y6 {
@@ -584,6 +606,14 @@ h2 {
         margin: 0;
         padding: 0;
     }
+
+    .order-1 {
+        order: 2;
+    }
+
+    .order-2 {
+        order: 1;
+    }
 }
 
   
@@ -591,5 +621,28 @@ h2 {
 @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .pink-circle {
+        position: absolute;
+        bottom: 70px;
+        right: 20px;
+        z-index: -1;
+    }
+    
+    .c-shape {
+        position: absolute;
+        left: -80px;
+        bottom: -80px;
+        z-index: -1;
+    }
+
+    .yellow-circle {
+        position: absolute;
+        top: 100px;
+        right: 135px;
+        z-index: -1;
     }
 }
