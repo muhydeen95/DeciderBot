@@ -17,7 +17,7 @@ section {
     font-family: 'Raleway', sans-serif;
 }
 
-.newsletter {
+.guideline, .newsletter {
     margin-top: 15rem;
 }
 
@@ -575,7 +575,12 @@ h2 {
         top: -100px;
     }
 
-    .newsletter, .newsletter-content {
+    .guideline {
+        margin-top: 3rem;
+    }
+
+     .newsletter,
+     .newsletter-content {
         margin: 0;
         padding: 0;
     }
