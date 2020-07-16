@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- ============ Favicon ============= -->
+    <link rel="icon" type="image/png" href="./ms-icon-144x144.png">
+
      <!-------------------------------------AOS CSS Links------------------------------------->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -36,14 +39,16 @@
                 <div class="row mt-0 pb-5 mb-5">
                         <div class="col-md-6 pt-3">
                             <div data-aos="zoom-out" data-aos-duration="1500" class="logo pb-4">
-                                <h2><img width="20" src="./assets/images/Vector (7).png" alt="logo"> <span>a</span>rra</h2>
+                                <h2>
+                                    <img width="20" src="./assets/images/Vector (7).png" alt="logo">
+                                     <span class="px-0 mx-0"><img class="logo-dot" src="./assets/images/logo-dot.png" alt="">a</span>rra</h2>
                             </div>
                             <div class="pt-4">
                                 <h3>Seamless</h3>
                                 <h1 class="pb-3 display-4 font-weight-bold">Decision <br> Making App</h1>
                                 <p class="py-3">
-                                    Are you ready to meet our DeciderBot <br> "Arra". A timeless A.I that helps you
-                                    make <br> decisions on the statistics of good or bad.
+                                    Are you ready to meet our DeciderBot "Arra"?. A <br> timeless A.I that helps you
+                                    make decisions based <br> on the statistics.
                                 </p>
                             </div>
                         </div>
@@ -74,7 +79,7 @@
                                 <div class="phone1 mt-5">
                                     <img data-aos="fade-up" data-aos-duration="1000" id="myImg2" style="float: left;" class="" src="./assets/images/phone3.png" alt="">
                                     <img style="width: 100%;" class="c-shape" src="./assets/images/C-shape.png" alt="">
-                                    <img style="width: 20%;" class="pink-circle" src="./assets/images/circle.png" alt="">
+                                    <img style="width: 20%;" class="pink-circle scroll" src="./assets/images/circle.png" alt="">
                                 </div>
                                 <div class="">
                                     <img data-aos="fade-down" data-aos-duration="1000" id="myImg3" style="float: left;" class="" src="./assets/images/phone4.png" alt="">
@@ -114,11 +119,11 @@
                 <div class="row mt-0 mb-5">
                         <div class="col-10 col-md-6 mx-auto newsletter">
                             <div class="mt-5  newsletter-content">
-                                <h4 class="pt-5 font-weight-bold pl-0">Coming Soon</h4>
+                                <span id="intro-type" class="pt-5 font-weight-bold pl-0"></span>
                                 <p>Get notified on the day of launch!</p>
                                 <form class="" method="POST" id="subscriber-form">
                                     <div class="row">
-                                        <div class="col-8 px-1">
+                                        <div class="col-8 pr-1">
                                             <input type="email" name="email" class="form-control" placeholder="Enter Email Address" required>
                                         </div>
                                         <div class="col-4 px-1">
@@ -198,6 +203,9 @@
     
      <!-------------------------------------AOS Links------------------------------------->
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!--typed javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
      <!-- Toastr Js -->
     <script src="assets/js/toastr.min.js"></script>

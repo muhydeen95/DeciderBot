@@ -5,6 +5,17 @@ AOS.init({
 
 
 
+/* ****************** Typed Javascript **************** */
+const typed = new Typed('#intro-type',{
+    strings: ['Coming Soon!!!',],
+    typeSpeed: 40,
+    backSpeed: 40,
+    startDelay: 1000,
+    loop: true
+})
+
+
+
 //Modal images
 
 var img = document.getElementById("myImg2");
